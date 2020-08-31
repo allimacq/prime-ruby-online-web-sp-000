@@ -1,7 +1,7 @@
 def prime?(number)
   ints = (2..100).to_a
   modular = [ ]
-  ints.remove(number)
+  ints.delete(number)
   ints.collect {|x| modular << number % x}
   if number == 2 || number == 3
     return true
